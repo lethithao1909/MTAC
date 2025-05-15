@@ -355,7 +355,6 @@ body {
   padding: 6px 24px;
   border-radius: 6px;
   margin-top: auto;
-  text-shadow: 1px 0 1px rgba(0, 0, 0, 0.5);
 }
 
 .service-card--ribbon {
@@ -394,14 +393,14 @@ body {
 }
 
 .compare-button:hover {
-  background-color: rgb(252, 42, 42);
+  background-color: rgb(12, 125, 150);
 }
 
 .arrow {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
-  background-color: red;
+  background-color: rgb(11, 96, 81);
   color: white;
   border: none;
   font-size: 24px;
@@ -442,36 +441,7 @@ body {
   transform: translateY(-50%) scale(0.95);
 }
 
-@media (max-width: 1024px) {
-  .service-card {
-    flex: 0 0 45%;
-  }
-}
 
-@media (max-width: 768px) {
-  .service-card {
-    flex: 0 0 250px;
-  }
-
-  .arrow {
-    font-size: 20px;
-    padding: 6px 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .service-card {
-    flex: 0 0 100%;
-  }
-
-  .section-service-intro {
-    padding: 15px 20px;
-  }
-
-  .banner-wrapper {
-    aspect-ratio: 16/9;
-  }
-}
 
 
 .section-quote-cta {
@@ -576,7 +546,7 @@ body {
 }
 
 .section-quote-cta__submit:hover {
-  background-color: #a15b11;
+  background-color: #128d94;
 }
 
 .section-quote-cta__message {
