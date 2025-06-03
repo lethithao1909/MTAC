@@ -38,7 +38,35 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//thanhtuu
+document.addEventListener('DOMContentLoaded', ()=> {
+    const cards = document.querySelectorAll('.achievement-card');
+    const obs = new IntersectionObserver((entries, o)=> {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const num = entry.target.querySelector('.achievement-number');
+        const target = +num.getAttribute('data-target');
+        const suffix = num.getAttribute('data-suffix')||'';
+        let count = 0;
+        const step = Math.ceil(target / 150);
+        const update = () => {
+          count += step;
+          if (count < target) {
+            num.innerText = count + suffix;
+            requestAnimationFrame(update);
+          } else {
+            num.innerText = target + suffix;
+          }
+        };
+        entry.target.classList.add('visible');
+        update();
+        o.unobserve(entry.target);
+      });
+    }, { threshold: 0.5 });
+    cards.forEach(c=> obs.observe(c));
+  });
 
+//qta
 document.getElementById('quote-form').addEventListener('submit', function(e) {
     e.preventDefault();
     const msg = document.getElementById('quote-message');

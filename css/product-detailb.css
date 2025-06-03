@@ -125,10 +125,11 @@ body {
     min-height: 100vh;
 }
 
-.section-solution a{
+.section-solution a {
     text-decoration: none;
 }
-.fa-arrow-left:hover{
+
+.fa-arrow-left:hover {
     color: #1d20ca;
 }
 
@@ -303,6 +304,7 @@ body {
     gap: 20px;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 20px;
+
 }
 
 .detail-image {
@@ -353,6 +355,63 @@ body {
 .compare-buttonb:hover {
     background-color: rgb(12, 125, 150);
 }
+
+.promo-offers {
+    padding: 25px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+
+.promo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promo-card {
+    width: 330px;
+    background: #e5f7f6;
+    border-radius: 12px;
+    box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.promo-badge {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #e9592a;
+    padding: 3px 16px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.promo-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #004b80;
+}
+
+.promo-desc {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    margin-bottom: 16px;
+}
+
 
 :root {
     --modal-bg: rgba(0, 0, 0, 0.5);
@@ -407,12 +466,12 @@ body {
 }
 
 .order-form h3 {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  padding: 16px 0;
-  z-index: 10;
-  font-size: 23px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 16px 0;
+    z-index: 10;
+    font-size: 23px;
 }
 
 .order-form label {
@@ -438,15 +497,15 @@ body {
 }
 
 .form-actions {
-  position: sticky;
-  bottom: 0;
-  background: #fff;
-  padding: 15px 0;
-  display: flex;
-  justify-content: flex-end;
-  gap: 12px;
-  z-index: 10;
-  border-top: 1px solid #eee;
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    z-index: 10;
+    border-top: 1px solid #eee;
 }
 
 .form-actions button {
@@ -534,8 +593,8 @@ body {
 .process__title {
     font-size: 30px;
     text-align: center;
-    color: var(--color-primary);
-    margin-bottom: 10px;
+    color: #157e6e;
+    margin-bottom: 20px;
 }
 
 .process__steps {
@@ -568,9 +627,10 @@ body {
 }
 
 .process__step img {
-    width: 120px;
+    width: 260px;
     height: 120px;
     object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .process__caption {
@@ -580,40 +640,113 @@ body {
 }
 
 
-.achievements {
-    margin: auto;
+.benefit-images {
+    padding: 40px 20px 0px 20px;
     text-align: center;
 }
 
-.achievements h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
-    color: var(--color-primary);
-    text-align: center;
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.achievements-grid {
-    display: flex;
-    gap: 30px;
-}
-
-.achievement-card {
-    padding: 16px 20px;
+.benefit-card {
+    background: #fff;
     border-radius: 8px;
-    background-color: #f5f5f5;
+    overflow: hidden;
+    box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.achievement-number {
+.benefit-card:hover {
+    transform: translateY(-6px);
+}
+
+.benefit-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover img {
+    transform: scale(1.05);
+}
+
+.benefit-card h4 {
+    font-size: 18px;
+    color: #004b80;
+    margin: 16px 12px;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+}
+
+.benefit-card:hover h4 {
+    color: #0b6623;
+}
+
+
+.project-gallery {
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.gallery-title {
+    margin-bottom: 15px;
     font-size: 25px;
-    font-weight: bold;
-    color: var(--color-primary);
+    color: #218169;
+    text-align: center;
 }
 
-.achievement-label {
-    margin-top: 5px;
-    font-size: 17px;
-    color: #333;
+.project-list {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
 }
+
+.project-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.project-list::-webkit-scrollbar-thumb {
+    background-color: rgba(111, 109, 109, 0.2);
+    border-radius: 4px;
+}
+
+.project-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.project-item {
+    flex: 0 0 auto;
+    width: 320px;
+    height: 230px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+
+
+
+
 
 :root {
     --color-bg: #fafafa;
@@ -630,7 +763,7 @@ body {
 }
 
 .reviews h3 {
-    font-size: 25px;
+    font-size: 20px;
     margin: 17px 13px;
     color: #376766;
 }
@@ -638,8 +771,8 @@ body {
 .reviews__list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-height: 275px;
+    gap: 10px;
+    max-height: 250px;
     overflow-y: auto;
     padding-right: 8px;
 }
@@ -654,7 +787,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
 }
 
 .review__author {
@@ -738,19 +870,6 @@ body {
 .review-form button:hover {
     background: #08826e;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .site-footer {
