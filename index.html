@@ -97,16 +97,23 @@
                 <span class="section-solution__menu-title">Trường Học Xanh-Mô Hình Phân Loại</span>
               </div>
             </a>
-
-          </nav>
+        </nav>
+        
 
           <h2 class="compare-price__title">SO SÁNH GIÁ</h2>
           <nav class="compare-price__menu">
-            <div class="compare-price__menu-item">
+            <div class="compare-price__menu-item" id="compareMenu">
               <i class="fas fa-tags"></i>
               <span class="compare-price__menu-title">So Sánh Giá Dịch Vụ</span>
+              <span id="compareCount" class="compare-price__badge">0</span>
+            </div>
+            <div id="compareListContainer" class="compare-list-container" style="display: none;">
+              <h4>Danh sách gói đã chọn:</h4>
+              <ul id="compareList"></ul>
+              <button id="btnCompareNow" disabled>So Sánh Ngay</button>
             </div>
           </nav>
+
 
           <h2 class="compare-price__title">MỤC TIÊU CÁC DỊCH VỤ</h2>
           <nav class="compare-price__menu compare-price__menu--static">
@@ -131,41 +138,59 @@
             <p>Giải pháp truyền thông hiệu quả, lan tỏa thông điệp bảo vệ môi trường đến cộng đồng.</p>
           </section>
 
+
+
+
+
+
+
           <div class="section-services">
             <div class="carousel-wrapper">
               <div class="service-container">
                 <button class="arrow left-arrow">&lt;</button>
 
                 <div class="service-cards">
-                  <div class="service-card">
+                  <div class="service-card" data-title="Trạm hành trình sống xanh"
+                    data-target="Đối Tượng: Đơn vị/tổ chức phi chính phủ (NGOs, CLB, Hội, …)"
+                    data-price="16.999.000 VNĐ">
                     <img src="assets/image/section/carousel-wrapper/TramHTSX.png" alt="" class="service-image" />
                     <h3 class="service-title">Trạm hành trình sống xanh</h3>
-                    <p class="service-target">Đối Tượng: Đơn vị/tổ chức phi chính phủ (NGOs, CLB, Hội, …)</p>
+                    <p class="service-target">
+                      Đối Tượng: Đơn vị/tổ chức phi chính phủ (NGOs, CLB, Hội, …)
+                    </p>
                     <p class="service-price">Giá Gói: 16.999.000 VNĐ</p>
                     <button class="compare-buttona">Thêm So Sánh</button>
                     <a href="product-detaila.html" class="compare-buttonb">Xem Chi Tiết</a>
                   </div>
 
-                  <div class="service-card service-card--ribbon">
+                  <div class="service-card service-card--ribbon" data-title="Trạm hành trình xanh cùng chuỗi"
+                    data-target="Đối Tượng: Chuỗi cửa hàng (TGDD, Highlands, Win...)" data-price="25.000.000 VNĐ">
                     <div class="service-ribbon">Gói Hot</div>
                     <img src="assets/image/section/carousel-wrapper/TramHTXCC.png" alt="" class="service-image" />
                     <h3 class="service-title">Trạm hành trình xanh cùng chuỗi</h3>
-                    <p class="service-target">Đối Tượng: Chuỗi cửa hàng (TGDD, Highlands, Win...)</p>
+                    <p class="service-target">
+                      Đối Tượng: Chuỗi cửa hàng (TGDD, Highlands, Win...)
+                    </p>
                     <p class="service-price">Giá Gói: 25.000.000 VNĐ</p>
                     <button class="compare-buttona">Thêm So Sánh</button>
                     <a href="product-detailb.html" class="compare-buttonb">Xem Chi Tiết</a>
                   </div>
 
-                  <div class="service-card">
+                  <div class="service-card" data-title="Văn hoá phân loại tại doanh nghiệp"
+                    data-target="Đối Tượng: Doanh nghiệp/cơ sở kinh doanh (khách sạn, TTTM, du lịch…)"
+                    data-price="15.799.000 VNĐ">
                     <img src="assets/image/section/carousel-wrapper/VHPhanloaiTDN.png" alt="" class="service-image" />
                     <h3 class="service-title">Văn hoá phân loại tại doanh nghiệp</h3>
-                    <p class="service-target">Đối Tượng: Doanh nghiệp/cơ sở kinh doanh (khách sạn, TTTM, du lịch…)</p>
+                    <p class="service-target">
+                      Đối Tượng: Doanh nghiệp/cơ sở kinh doanh (khách sạn, TTTM, du lịch…)
+                    </p>
                     <p class="service-price">Giá Gói: 15.799.000 VNĐ</p>
                     <button class="compare-buttona">Thêm So Sánh</button>
                     <a href="product-detailc.html" class="compare-buttonb">Xem Chi Tiết</a>
                   </div>
 
-                  <div class="service-card">
+                  <div class="service-card" data-title="Mô hình phân loại phục vụ Luật BVMT 2020"
+                    data-target="Đối Tượng: Cơ quan nhà nước" data-price="15.000.000 VNĐ">
                     <img src="assets/image/section/carousel-wrapper/LuatBVMT2020.png" alt="" class="service-image" />
                     <h3 class="service-title">Mô hình phân loại phục vụ Luật BVMT 2020</h3>
                     <p class="service-target">Đối Tượng: Cơ quan nhà nước</p>
@@ -174,10 +199,13 @@
                     <a href="product-detaild.html" class="compare-buttonb">Xem Chi Tiết</a>
                   </div>
 
-                  <div class="service-card">
+                  <div class="service-card" data-title="Trường học xanh – Hành trình phân loại"
+                    data-target="Đối Tượng: Trường học (mầm non, tiểu học, THCS...)" data-price="25.299.000 VNĐ">
                     <img src="assets/image/section/carousel-wrapper/TruonghocXHTPL.png" alt="" class="service-image" />
                     <h3 class="service-title">Trường học xanh – Hành trình phân loại</h3>
-                    <p class="service-target">Đối Tượng: Trường học (mầm non, tiểu học, THCS...)</p>
+                    <p class="service-target">
+                      Đối Tượng: Trường học (mầm non, tiểu học, THCS...)
+                    </p>
                     <p class="service-price">Giá Gói: 25.299.000 VNĐ</p>
                     <button class="compare-buttona">Thêm So Sánh</button>
                     <a href="product-detaile.html" class="compare-buttonb">Xem Chi Tiết</a>
@@ -188,6 +216,13 @@
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
 
           <section class="achievements-highlight">
             <h3>Thành Tựu Nổi Bật</h3>
@@ -218,13 +253,19 @@
           <section class="service-gallery">
             <h3>Hình Ảnh Liên Quan</h3>
             <div class="gallery-container">
-              <div class="gallery-item"><img src="assets/image/section/service-gallery/Artboard_5.png" alt="Dịch vụ 1"></div>
-              <div class="gallery-item"><img src="assets/image/section/service-gallery/th (1).jpg" alt="Dịch vụ 2"></div>
-              <div class="gallery-item"><img src="assets/image/section/service-gallery/th (2).jpg" alt="Dịch vụ 3"></div>
+              <div class="gallery-item"><img src="assets/image/section/service-gallery/Artboard_5.png" alt="Dịch vụ 1">
+              </div>
+              <div class="gallery-item"><img src="assets/image/section/service-gallery/th (1).jpg" alt="Dịch vụ 2">
+              </div>
+              <div class="gallery-item"><img src="assets/image/section/service-gallery/th (2).jpg" alt="Dịch vụ 3">
+              </div>
               <div class="gallery-item"><img src="assets/image/section/service-gallery/th.jpg" alt="Dịch vụ 4"></div>
-              <div class="gallery-item"><img src="assets/image/section/service-gallery/truonghocxanh.jpg" alt="Dịch vụ 6"></div>
-              <div class="gallery-item"><img src="assets/image/section/service-gallery/Artboard_5.png" alt="Dịch vụ 7"></div>
-              <div class="gallery-item"><img src="assets/image/section/service-gallery/th (1).jpg" alt="Dịch vụ 8"></div>
+              <div class="gallery-item"><img src="assets/image/section/service-gallery/truonghocxanh.jpg"
+                  alt="Dịch vụ 6"></div>
+              <div class="gallery-item"><img src="assets/image/section/service-gallery/Artboard_5.png" alt="Dịch vụ 7">
+              </div>
+              <div class="gallery-item"><img src="assets/image/section/service-gallery/th (1).jpg" alt="Dịch vụ 8">
+              </div>
             </div>
           </section>
 
