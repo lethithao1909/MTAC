@@ -1,16 +1,327 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>So Sánh Gói Dịch Vụ</title>
-  <link rel="stylesheet" href="compare.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body>
-  <h2>Trang So Sánh Gói Dịch Vụ</h2>
-  <div id="comparisonResult"></div>
+<html lang="en">
 
-  <script src="compare.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>So Sánh Giá</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/compare.css">
+</head>
+
+<body>
+  <div class="main">
+
+    <header class="header">
+      <div class="header__logo">
+        <img src="assets/image/header/logo-header.png" alt="Logo MACT" class="header__logo-image" />
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">TRANG CHỦ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">DỰ ÁN</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">THƯ VIỆN</a>
+          </li>
+          <li class="menu__item menu__item--active">
+            <a href="#" class="menu__link">BÁO GIÁ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">CÔNG CỤ & TIỆN ÍCH</a>
+          </li>
+        </ul>
+        <ul class="menu__login">
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <i class="fas fa-user"></i>
+              ĐĂNG NHẬP
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <section class="section-solution">
+      <div class="section-solution__wrapper">
+        <aside class="section-solution__sidebar" id="sidebar">
+          <button class="sidebar-toggle" id="sidebarToggle">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <h2 class="section-solution__title">TRUYỀN THÔNG MÔI TRƯỜNG</h2>
+          <nav class="section-solution__menu">
+            <a href="product-detaila.html">
+              <div class="section-solution__menu-item section-solution__menu-item--active">
+                <i class="fas fa-seedling"></i>
+                <span class="section-solution__menu-title">Trạm Hành Trình Sống Xanh</span>
+              </div>
+            </a>
+            <a href="product-detailb.html">
+              <div class="section-solution__menu-item">
+                <i class="fas fa-link"></i>
+                <span class="section-solution__menu-title">Trạm Hành Trình Xanh Cùng Chuỗi</span>
+              </div>
+            </a>
+            <a href="product-detailc.html">
+              <div class="section-solution__menu-item">
+                <i class="fas fa-recycle"></i>
+                <span class="section-solution__menu-title">Văn Hoá Phân Loại Tại Doanh Nghiệp</span>
+              </div>
+            </a>
+
+            <a href="product-detaild.html">
+              <div class="section-solution__menu-item">
+                <i class="fas fa-balance-scale"></i>
+                <span class="section-solution__menu-title">Mô Hình Phân Loại Phục Vụ Luật BVMT 2020</span>
+              </div>
+            </a>
+            <a href="product-detaile.html">
+              <div class="section-solution__menu-item">
+                <i class="fas fa-school"></i>
+                <span class="section-solution__menu-title">Trường Học Xanh-Mô Hình Phân Loại</span>
+              </div>
+            </a>
+          </nav>
+
+
+          <h2 class="compare-price__title">SO SÁNH DỊCH VỤ</h2>
+          <a href="compare.html">
+          <nav class="compare-price__menu">
+            <div class="compare-price__menu-item" id="compareMenu">
+              <i class="fas fa-tags"></i>
+              <span class="compare-price__menu-title">So Sánh Dịch Vụ</span>
+            </div>
+          </nav>
+          </a>
+
+
+          <h2 class="compare-price__title">MỤC TIÊU CÁC DỊCH VỤ</h2>
+          <nav class="compare-price__menu compare-price__menu--static">
+            <div class="compare-price__menu-item">
+              <span class="compare-price__menu-title" style="word-spacing:4px; color:#595e5e;">
+                Giải pháp hướng đến nhóm đối tượng không muốn chất thải phát sinh đưa về bãi chôn
+                lấp của địa phương. Đối tượng sẵn sàng thực hiện đúng vai trò, trách nhiệm bảo vệ
+                môi trường của chủ nguồn thải, tự chủ chi trả chi phí xử lý khi phát sinh.
+                Công Ty Môi Trường Á Châu luôn định hướng tư vấn, cung cấp giải pháp hạn chế tối
+                đa việc phát sinh chất thải ngay tại nguồn, ưu tiên quản lý chất thải theo thứ tự: giảm thiểu tại
+                nguồn, tái sử dụng ,tái chế ,đồng xử lý thu hồi năng lượng ,xử lý theo các giải pháp thân thiện
+                khác.
+              </span>
+
+            </div>
+          </nav>
+        </aside>
+
+        <div class="section-solution__content">
+          <section class="section-service-intro">
+            <h2>SO SÁNH TỔNG QUAN CÁC GÓI DỊCH VỤ</h2>
+          </section>
+          <section class="service-comparison">
+            <div class="common-note">
+              <section class="process">
+                <h5>Mục đích:</h5> Giải pháp hướng đến nhóm đối tượng không muốn chất thải phát sinh đưa về
+                bãi chôn lấp của địa phương. Đối tượng sẵn sàng thực hiện đúng vai trò, trách nhiệm bảo vệ môi trường
+                của
+                chủ nguồn thải, tự chủ chi trả chi phí xử lý khi phát sinh. Bảo vệ môi trường, nâng cao nhận thức cộng
+                đồng và hỗ trợ thực hiện Luật Bảo vệ Môi trường
+                <h5>Quy trình triển khai &amp; Đồng hành</h5>
+
+                <div class="process__steps">
+                  <div class="process__step">
+                    <img src="assets/image/image_product-detaila/b1.png" alt="Bước 1">
+                    <div class="process__caption">
+                      Bước 1: Điền vào phiếu khảo sát
+                    </div>
+                    <i class="fa-solid fa-arrow-right process__arrow"></i>
+                  </div>
+                  <div class="process__step">
+                    <img src="assets/image/image_product-detaila/b2.png" alt="Bước 2">
+                    <div class="process__caption">
+                      Bước 2: Gửi gói sản phẩm
+                    </div>
+                    <i class="fa-solid fa-arrow-right process__arrow"></i>
+                  </div>
+                  <div class="process__step">
+                    <img src="assets/image/image_product-detaila/b3.png" alt="Bước 3">
+                    <div class="process__caption">
+                      Bước 3: Ký văn bản thỏa thuận<br>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+
+            <div class="comparison-grid">
+              <div class="row title">
+                <div> Khác nhau
+                </div>
+                <div>Trạm hành trình sống xanh</div>
+                <div>Trạm hành trình xanh cùng chuỗi</div>
+                <div>Văn hóa phân loại tại doanh nghiệp</div>
+                <div>Mô hình phân loại phục vụ Luật BVMT 2020</div>
+                <div>Trường học xanh – Hành trình phân loại</div>
+              </div>
+
+              <div class="row">
+                <div>Đối tượng</div>
+                <div>NGOs, CLB, Hội...</div>
+                <div>Chuỗi cửa hàng (TGDD, Highlands...)</div>
+                <div>Doanh nghiệp/cơ sở kinh doanh (khách sạn, TTTM, du lịch…)</div>
+                <div>Cơ quan nhà nước</div>
+                <div>Trường học (mầm non, tiểu học, THCS...)</div>
+              </div>
+
+              <div class="row">
+                <div>Thành phần chính</div>
+                <div>
+                  - Truyền thông : 01 bài viết <br> <br>
+                  - App MTAC+ : 01 tài khoản<br><br>
+                  - Thu hồi rác: pin thải tối đa 100kg/năm, nhựa, giấy, lon...<br><br>
+                  -Tài liệu tập huấn(không bao gồm in ấn): 0 <br><br><br><br>
+                  - Ngày hội phát động/sự kiện môi trường: Báo cáo viên 1 trong 3 chyên đề, Hoạt náo chương
+                  trình<br><br><br><br>
+                  - Thiết kế: Biển báo CTNH ,Nhãn dán thùng rác<br><br><br><br><br><br><br>
+                  - Ấn phẩm cho chương trình : Sổ tay thân thiện môi trường, Móc khóa thông điệp<br><br>
+                </div>
+                <div>
+                  - Truyền thông : 01 bài viết <br> <br>
+                  - App MTAC+ : 01 tài khoản<br><br>
+                  - Thu hồi rác: pin thải tối đa 200kg/năm, nhựa, giấy, lon...<br><br>
+                  -  Tài liệu tập huấn(không bao gồm in ấn): Phân loại rác tại nguồn<br><br><br>
+                  - Ngày hội phát động/sự kiện môi trường: Báo cáo viên 1 trong 3 chyên đề, Hoạt náo chương
+                  trình<br><br><br><br>
+                  - Thiết kế: Biển báo CTNH ,Nhãn dán thùng rác , Banner chương trình , Infographic chương trình ,Standee chương trình<br><br><br><br>
+                  - Ấn phẩm cho chương trình : Sổ tay thân thiện môi trường, Túi vải<br><br>
+                </div>
+                <div>
+                  - Truyền thông : 01 bài viết <br> <br>
+                  - App MTAC+ : 01 tài khoản<br><br>
+                  - Thu hồi rác: pin thải tối đa 100kg/năm, nhựa, giấy, lon...<br><br>
+                  - Tài liệu tập huấn(không bao gồm in ấn): 0<br><br><br><br>
+                  - Ngày hội phát động/sự kiện môi trường: Báo cáo viên 1 trong 3 chyên đề, Hoạt náo chương
+                  trình<br><br><br><br>
+                  - Thiết kế: Biển báo CTNH ,Nhãn dán thùng rác , Banner chương trình <br><br><br><br><br><br>
+                  - Ấn phẩm cho chương trình : Sổ tay thân thiện môi trường, Túi vải<br><br>
+                </div>
+                <div>
+                  - Truyền thông : 01 bài viết <br> <br>
+                  - App MTAC+ : 01 tài khoản<br><br>
+                  - Thu hồi rác: pin thải tối đa 50kg/năm, nhựa, giấy, lon...<br><br>
+                  - Tài liệu tập huấn(không bao gồm in ấn): Phân loại rác tại nguồn<br><br><br>
+                  - Ngày hội phát động/sự kiện môi trường: Báo cáo viên 1 trong 3 chyên đề, Hoạt náo chương
+                  trình<br><br><br><br>
+                  - Thiết kế: Biển báo CTNH ,Nhãn dán thùng rác , Banner chương trình , Infographic chương trình ,Standee chương trình<br><br><br><br>
+                  - Ấn phẩm cho chương trình : Sổ tay thân thiện môi trường, Túi vải<br><br>
+                </div>
+                <div>
+                   - Truyền thông : 01 bài viết <br> <br>
+                  - App MTAC+ : 01 tài khoản<br><br>
+                  - Thu hồi rác: pin thải tối đa 50kg/năm, nhựa, giấy, lon...<br><br>
+                  - Tài liệu tập huấn(không bao gồm in ấn): Phân loại rác tại nguồn, Tái chế vỏ hộp sữa<br><br>
+                  - Ngày hội phát động/sự kiện môi trường: Báo cáo viên 1 trong 3 chyên đề, Hoạt náo chương
+                  trình<br><br><br><br>
+                  - Thiết kế: Biển báo CTNH ,Nhãn dán thùng rác , Banner chương trình , Infographic chương trình ,Standee chương trình<br><br><br><br>
+                  - Ấn phẩm cho chương trình : Sổ tay thân thiện môi trường, Móc khoá thông điệp, Túi vải<br><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div>Xem Thêm</div>
+                <div><a href="product-detaila.html" class="compare-buttonb">Xem Chi Tiết</a></div>
+                <div><a href="product-detailb.html" class="compare-buttonb">Xem Chi Tiết</a></div>
+                <div><a href="product-detailc.html" class="compare-buttonb">Xem Chi Tiết</a></div>
+                <div><a href="product-detaild.html" class="compare-buttonb">Xem Chi Tiết</a></div>
+                <div><a href="product-detaile.html" class="compare-buttonb">Xem Chi Tiết</a></div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-column">
+          <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+          <p>Hotline: <strong>1900 545450</strong> (909đ/phút) - <strong>033 8351122</strong> (Zalo)</p>
+          <p>Góp ý CLDV: <strong>033 9751122</strong> - <strong>0972 851122</strong></p>
+          <p>Văn phòng phục vụ miền Bắc: 033 8351122</p>
+          <p>Văn phòng phục vụ miền Trung – Tây Nguyên: 0902 450585</p>
+          <p>Văn phòng phục vụ TP. HCM – miền Đông: 033 8351122</p>
+          <p>Văn phòng phục vụ miền Tây: 0902 912586</p>
+          <p>Contact us (English): (+84)362851122 (Whatsapp, Viber)</p>
+          <p>Xem tất cả văn phòng, chi nhánh </p>
+        </div>
+        <div class="footer-column">
+          <h3>VỀ CHÚNG TÔI</h3>
+          <ul>
+            <li><a href="#">Chiến lược phát triển</a></li>
+            <li><a href="#">Giá Trị Cốt Lõi</a></li>
+            <li><a href="#">Hình thành và phát triển</a></li>
+            <li><a href="#">Hồ sơ năng lực</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>LĨNH VỰC HOẠT ĐỘNG</h3>
+          <ul>
+            <li><a href="#">Phế liệu</a></li>
+            <li><a href="#">Chất thải</a></li>
+            <li><a href="#">Tái chế</a></li>
+            <li><a href="#">Tư vấn môi trường</a></li>
+            <li><a href="#">Xử lý nước</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>THEO DÕI CHÚNG TÔI</h3>
+          <ul>
+            <li><i class="fab fa-facebook-f"></i> Facebook</li>
+            <li><i class="fas fa-comment-dots"></i> Zalo Officials</li>
+            <li><i class="fab fa-youtube"></i> Youtube</li>
+            <li><i class="fab fa-linkedin"></i> Linkedin</li>
+            <li><i class="fab fa-apple"></i> MTAC+ (iOS)</li>
+            <li><i class="fab fa-google-play"></i> MTAC+ (Android)</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>LƯỢT TRUY CẬP</h3>
+          <p><i class="fas fa-users"></i> Online: 214</p>
+          <p><i class="fas fa-chart-bar"></i> Lượt truy cập: 5.249.921</p>
+        </div>
+      </div>
+      <div class="footer-bottom">Copyright 2013-2025 © CÔNG TY TNHH MTV SX TM DV MÔI TRƯỜNG Á CHÂU</div>
+    </footer>
+
+
+    <script src="assets/js/compare.js"></script>
+  </div>
+
 </body>
+
 </html>
